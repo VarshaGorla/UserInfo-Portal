@@ -1,0 +1,13 @@
+<div *ngFor = 'let album of albums$'>
+  <ul>
+    <li  ng-repeat="album in albums$" >
+      
+        <h5>{{album.title}}</h5><br>
+        <button ion-button color="secondary" (click)= "openAlbums($event)" id="{{ album.id }}">{{buttonName}}</button><br>
+        <ng-container *ngIf="show">
+          <div id="albumPhotos_{{ album.id }}" #div></div>
+        </ng-container>
+    </li>
+  </ul>
+
+</div>

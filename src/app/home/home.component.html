@@ -1,0 +1,9 @@
+<div *ngFor = 'let user of users$' style="text-align:center">
+  <ul>
+    <li ng-repeat="user in users$">
+      <p (click)= "openAlbums()">{{ user.name }}</p> 
+      <p>{{user.address['street']}},{{user.address['suite']}},{{user.address['city']}},{{user.address['zipcode']}}</p> 
+    </li>
+  </ul>
+    
+</div>

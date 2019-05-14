@@ -1,0 +1,45 @@
+ul {
+    width:100%;
+    list-style-type: none;
+    margin: 0;padding: 0;
+    
+
+    li {
+        width: 100%;
+        background: rgb(238, 238, 238);
+        padding: 2em;
+        border-radius: 10px;
+        margin-bottom: 7px;
+        display: grid;
+        grid-template-columns: 160px auto;
+
+        h5 {
+            font-weight: bolder;
+        }
+        button {
+            height: 30px;
+        }
+        div{
+            width: 1000px;
+            
+            div{
+                float: left;
+                height: 10%;
+                width: 20%;
+
+                img{
+                  height: 150px;  
+                }
+                
+                div {   
+                    width: 90%;
+                    height: 150px;;
+                    p {
+                        justify-self: centre;
+                    }
+                }
+            
+            }
+        }
+    } 
+}  

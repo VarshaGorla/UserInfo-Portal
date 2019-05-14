@@ -1,0 +1,15 @@
+<div *ngFor = 'let photo of photos$'>
+  
+    <div ng-repeat="photo in photos$">
+      <img  src= {{photo.url}}> 
+      <div>
+        <h5> {{photo.id}} </h5>
+        <p>{{photo.title}}</p>
+      </div>
+      
+    </div>
+  
+</div>
+
+
+
