@@ -9,10 +9,9 @@ import { DataService } from '../data.service';
 })
 export class PhotosComponent implements OnInit {
 
-  @Input() photos$: Photo[];
+  photos$: Photo[];
   constructor(private dataService: DataService) { }
   
-  @Output() displayPhotos = new EventEmitter();
   ngOnInit() {
     return this.dataService.getPhotos()
      .subscribe(photos =>  this.photos$ = photos);
